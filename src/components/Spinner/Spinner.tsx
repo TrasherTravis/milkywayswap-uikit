@@ -4,18 +4,27 @@ import { SpinnerProps } from "./types";
 import { Svg, SvgProps } from "../Svg";
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: scale(1.0);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: scale(2.0);
+  }
+  50% {
+    transform: scale(3.0);
+  }
+  75% {
+    transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
   }
 `;
 
 const SpinnerIcon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 96 96" {...props}>
-      <image width="96" height="96" href="/images/egg/9.png"/>
+      <image width="96" height="96" href="/images/viva/9.png" />
     </Svg>
   );
 };
