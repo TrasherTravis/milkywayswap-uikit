@@ -117,7 +117,7 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/VIVAinsure",
+    href: "https://t.me/Symmetrymarkets",
     // items: [
     //   {
     //     label: "English",
@@ -176,7 +176,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/InsureViva",
+    href: "https://twitter.com/SymmetryMarkets",
   },
   // {
   //   label: "Reddit",
