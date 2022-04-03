@@ -356,7 +356,7 @@ var Icon$p = function (props) {
 
 var Icon$q = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/symmetry/logo.png" })));
+        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/milkyway/logo.png" })));
 };
 
 var Icon$r = function (props) {
@@ -413,7 +413,7 @@ var Icon$u = function (props) {
 
 var Icon$v = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/symmetry/9.png" })));
+        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/milkyway/9.png" })));
 };
 
 var Icon$w = function (props) {
@@ -665,29 +665,10 @@ var ButtonMenuItem = function (_a) {
 };
 var templateObject_1$8;
 
-/**
- * Priority: Warning --> Success --> Active
- */
-var getBoxShadow = function (_a) {
-    var isActive = _a.isActive, isSuccess = _a.isSuccess, isWarning = _a.isWarning, theme = _a.theme;
-    if (isWarning) {
-        return theme.card.boxShadowWarning;
-    }
-    if (isSuccess) {
-        return theme.card.boxShadowSuccess;
-    }
-    if (isActive) {
-        return theme.card.boxShadowActive;
-    }
-    return theme.card.boxShadow;
-};
-var StyledCard = styled__default['default'].div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled__default['default'].div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 6px;\n  color: ", ";\n  position: relative;\n\n  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);\n  border-radius: 6px;\n  ", "\n\n  &::before {\n    content: \"\";\n    width: 103%;\n    height: 103%;\n    border-radius: 8px;\n    position: absolute;\n    z-index: -1;\n    top: -1.5%;\n    left: -1.5%;\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 6px;\n  color: ", ";\n  position: relative;\n\n  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);\n  border-radius: 6px;\n  ", "\n\n  &::before {\n    content: \"\";\n    width: 103%;\n    height: 103%;\n    border-radius: 8px;\n    position: absolute;\n    z-index: -1;\n    top: -1.5%;\n    left: -1.5%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.card.boxShadow;
-}, getBoxShadow, function (_a) {
     var theme = _a.theme, isDisabled = _a.isDisabled;
     return theme.colors[isDisabled ? "textDisabled" : "text"];
 }, styledSystem.space);
@@ -936,7 +917,7 @@ var scales$1 = {
 /**
  * Priority: Warning --> Success
  */
-var getBoxShadow$1 = function (_a) {
+var getBoxShadow = function (_a) {
     var _b = _a.isSuccess, isSuccess = _b === void 0 ? false : _b, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, theme = _a.theme;
     if (isWarning) {
         return theme.shadows.warning;
@@ -961,7 +942,7 @@ var getHeight = function (_a) {
 var Input = styled__default['default'].input(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
-}, getBoxShadow$1, function (_a) {
+}, getBoxShadow, function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 }, getHeight, function (_a) {
@@ -1143,7 +1124,7 @@ var Progress = function (_a) {
 var rotate$1 = styled.keyframes(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  0% {\n    transform: scale(1.0);\n  }\n  25% {\n    transform: scale(2.0);\n  }\n  50% {\n    transform: scale(3.0);\n  }\n  75% {\n    transform: scale(2.0);\n  }\n  100% {\n    transform: scale(1.0);\n  }\n"], ["\n  0% {\n    transform: scale(1.0);\n  }\n  25% {\n    transform: scale(2.0);\n  }\n  50% {\n    transform: scale(3.0);\n  }\n  75% {\n    transform: scale(2.0);\n  }\n  100% {\n    transform: scale(1.0);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/symmetry/9.png" })));
+        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/milkyway/9.png" })));
 };
 var Container$1 = styled__default['default'].div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled__default['default'](SpinnerIcon)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
@@ -1888,7 +1869,7 @@ var Icon$P = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React__default['default'].createElement(Svg, __assign({}, props),
-        React__default['default'].createElement("image", { width: "100%", height: "100%", href: isDark ? "/images/symmetry/LogoTextNewDark.png" : "/images/symmetry/LogoTextNewWhite.png" })));
+        React__default['default'].createElement("image", { height: "60px", href: isDark ? "/images/milkyway/LogoTextNewDark.png" : "/images/milkyway/LogoTextNewWhite.png" })));
 };
 
 var Icon$Q = function (props) {
@@ -2100,7 +2081,7 @@ var Logo$1 = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
-        React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
+        React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark, height: "60px" })));
     return (React__default['default'].createElement(Flex, { style: { alignItems: "center" } },
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "24px", color: "hamburgerIcon" })) : (React__default['default'].createElement(Icon$K, { width: "24px", color: "hamburgerIcon" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "VIVA home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "VIVA home page" }, innerLogo))));
@@ -2225,12 +2206,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/Symmetrymarkets",
+        href: "https://t.me/MilkyWaymarkets",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/SymmetryMarkets",
+        href: "https://twitter.com/MilkyWayMarkets",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2338,16 +2319,16 @@ var PanelBody = function (_a) {
 var templateObject_1$B;
 
 var Icons$1 = IconModule;
-var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon; Icons$1.LanguageIcon;
+Icons$1.MoonIcon; Icons$1.SunIcon; Icons$1.LanguageIcon;
 var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
 var PriceLink = styled__default['default'].a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var SettingsEntry = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
     if (!isPushed) {
         return (React__default['default'].createElement(Container$4, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2375,13 +2356,7 @@ var PanelFooter = function (_a) {
                 // }
                 return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React__default['default'].createElement(Icon, __assign({}, iconProps))));
-            }))),
-        React__default['default'].createElement(SettingsEntry, null,
-            React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
-                React__default['default'].createElement(Flex, { alignItems: "center" },
-                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
-                    React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))))));
+            })))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
@@ -2658,7 +2633,7 @@ var StyledNav = styled__default['default'].nav(templateObject_2$f || (templateOb
     return theme.nav.topBackground;
 });
 var BodyWrapper = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
+var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy.webp\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy.webp\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
