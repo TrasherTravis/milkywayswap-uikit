@@ -2620,7 +2620,7 @@ var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTem
     return theme.nav.topBackground;
 });
 var BodyWrapper = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy.webp\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy.webp\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"])), function (_a) {
+var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy6.gif\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n  background-image: url(\"/images/milkyway/body-bg-galaxy6.gif\");\n  background-repeat: no-repeat;\n  background-size: cover;\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
